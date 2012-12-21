@@ -8,3 +8,5 @@ This application does:
 2. Modify installscript.vdf to launch ReticleFix.exe when starting game.
 3. Set "Deny Write" permission to installscript.vdf to prevent Steam is reverting to original.
 4. Disable/Enable all display adapters when starting game.
+
+Note: This application is made with AutoIt, which can cause [false-positive on some Anti-Virus softwares](http://www.autoitscript.com/forum/topic/34658-are-my-autoit-exes-really-infected/).
