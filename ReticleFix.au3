@@ -13,6 +13,8 @@ Func reticleFix()
    RunWait($tempDevConPath & " disable =Display *", "", @SW_HIDE)
    RunWait($tempDevConPath & " enable =Display *", "", @SW_HIDE)
    
+   FileDelete($tempDevConPath)
+   
    Exit(1)
 EndFunc
 
@@ -62,6 +64,8 @@ Func installReticleFix()
    FileCopy(@ScriptFullPath, $reticleFixPath, 1)
    
    MsgBox(32, "ReticleFix", "ReticleFix installed!" & @CRLF & "Now just launch Call of Duty: Black Ops 2!")
+   
+   FileDelete($tempSetAclPath)
 EndFunc
 
 If StringCompare(@ScriptFullPath, $reticleFixPath) == 0 Then
