@@ -1,0 +1,10 @@
+ReticleFix
+=================
+Bring back reticles to Call of Duty: Black Ops 2!
+
+This application does:
+
+1. Copy itself to Steam/steamapps/common/Call of Duty Black Ops II/ReticleFix.exe
+2. Modify installscript.vdf to launch ReticleFix.exe when starting game.
+3. Set "Deny Write" permission to installscript.vdf to prevent Steam is reverting to original.
+4. Disable/Enable all display adapters when starting game.
