@@ -34,7 +34,8 @@ Func installReticleFix()
 		 FileInstall("bin/SetACL_x64.exe", $tempSetAclPath)
    EndSwitch
    
-   $installScriptPath = getBops2Path() & "/installscript.vdf"
+   $installScriptPath = getBops2Path() & "\installscript.vdf"
+   
    $target = '	"Run Process"' & @LF & _
 			'	{'
    $replace = $target & @LF & _
