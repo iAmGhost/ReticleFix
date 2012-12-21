@@ -12,6 +12,8 @@ Func reticleFix()
 
    RunWait($tempDevConPath & " disable =Display *", "", @SW_HIDE)
    RunWait($tempDevConPath & " enable =Display *", "", @SW_HIDE)
+   
+   Exit(1)
 EndFunc
 
 Func getSteamPath()
